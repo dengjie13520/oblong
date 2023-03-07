@@ -5,7 +5,7 @@ function checkPlane(in_plane){
             let rectB = in_plane[j]
             let wrapA = getEndPoints(rectA.coordinateOfRectCenter,rectA.size.width,rectA.size.height)
             let wrapB = getEndPoints(rectB.coordinateOfRectCenter,rectB.size.width,rectB.size.height)
-            if(checkTwoRect(wrapA,wrapB)){
+            if(checkTwoRect(wrapA,wrapB) || checkTwoRect(wrapB,wrapA)){
                 console.log(`${rectA.name}和${rectB.name}存在交叉`)
             }
         }
