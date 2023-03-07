@@ -30,6 +30,7 @@ function checkDot(in_plane,i,j,yMax,xMax){
     if(count >2){
         return true
     }
+    return false
 }
 let myPlane =[
     [0,0,0,0,1,1,1,1,0,0,0],
